@@ -1,0 +1,428 @@
+html#main-window {
+    --color-bg: #020202 !important;
+    --color-fill: #999 !important;
+    --toolbar-bgcolor: var(--color-bg) !important;
+    --gap-between-tabs: 5px !important;
+    --margin-after-tab-list: 8x !important;
+    --margin-before-tab-list: 8px !important;
+    --tab-font-weight: 600 !important;
+    --tab-height: 32px !important;
+    --urlbar-height: 32px !important;
+    --tabs-container-height: 110px !important;
+    --urlbar-container-margin: 5px !important;
+    --urlbar-list-width: 60% !important;
+    --urlbar-text-font: "PragmataPro Mono" !important;
+    --urlbar-text-size: 16px !important;
+    --urlbar-text-weight: 300 !important;
+    --urlbar-text-color: #555 !important;
+    --lwt-toolbarbutton-icon-fill: var(--color-fill) !important;
+    --lwt-toolbar-field-focus-color: var(--color-fill) !important !important;
+    --lwt-toolbar-field-color: #999 !important;
+    --lwt-toolbar-field-background-color: var(--color-bg);
+    --lwt-toolbarbutton-hover-background: transparent !important;
+    --lwt-toolbarbutton-active-background: transparent !important;
+    --arrowpanel-background: var(--color-bg);
+    --arrowpanel-color: white !important;
+    --arrowpanel-border-color: transparent !important;
+    --toolbar-non-lwt-textcolor: #999 !important;
+    --toolbarbutton-hover-transition-duration: 250ms;
+    --menu-text-size: 13px !important;
+    --menu-text-font: "sys" !important;
+    --radius: 10px !important;
+    --short-notification-background: var(--color-fill) !important;
+    --urlbarView-primary-button-background: var(--color-fill) !important;
+    --urlbarView-primary-button-background-hover: var(--color-fill) !important;
+    --urlbarView-primary-button-background-active: var(--color-fill) !important;
+    --cfr-active-color: var(--color-fill) !important
+}
+
+.tab.discarded,
+.tab:hover {
+    color: #d3dae3 !important
+}
+
+.favicon,
+.tab .twisty,
+.twisty {
+    visibility: hidden
+}
+
+#tabbar,
+#urlbar:hover,
+.tab {
+    box-shadow: none !important
+}
+
+:-moz-any(#urlbar-background, #urlbar-input-container, .urlbarView-body-inner, #searchbar, .searchbar-textbox) {
+    background-color: var(-color-bg) !important;
+    color: #666 !important
+}
+
+:-moz-any(#urlbar, #searchbar, .searchbar-textbox) ::-moz-selection {
+    background: #222 !important;
+    color: #999 !important
+}
+
+#downloads-button,
+.toolbarbutton-1,
+.toolbarbutton-animatable-box {
+    color: var(--color-fill) !important;
+    -moz-context-properties: fill, fill-opacity;
+    fill: var(--lwt-toolbarbutton-icon-fill, currentColor);
+    fill-opacity: var(--toolbarbutton-icon-fill-opacity)
+}
+
+#statuspanel-label,
+.statuspanel-label {
+    -moz-appearance: none !important;
+    opacity: .01 !important
+}
+
+#TabsToolbar>.titlebar-buttonbox-container,
+#appMenu-customize-button,
+#appMenu-customize-button+toolbarseparator,
+#appMenu-edit-controls,
+#appMenu-edit-controls+toolbarseparator,
+#appMenu-find-button,
+#appMenu-fxa-container+toolbarseparator,
+#appMenu-library-button,
+#appMenu-more-button,
+#appMenu-open-file-button,
+#appMenu-save-file-button,
+#appMenu-zoom-controls,
+#appMenu-zoom-controls+toolbarseparator,
+#appMenuRestoreLastSession,
+#back-button,
+#close-button #appMenu-fxa-container,
+#connection-icon,
+#context-navigation,
+#context-sendaudio,
+#context-sendimage,
+#context-sendlinktodevice,
+#context-sendpagetodevice,
+#context-sendvideo,
+#context-sep-navigation,
+#context-sep-sendlinktodevice,
+#context-sep-sendpagetodevice,
+#context_sendTabToDevice,
+#context_sendTabToDevice_separator,
+#forward-button,
+#identity-box,
+#identity-box.verifiedIdentity,
+#inspect-separator,
+#minimize-button,
+#nav-bar-overflow-button,
+#new-tab-button,
+#pageAction-panel-emailLink,
+#pageAction-panel-sendToDevice,
+#pageActionButton,
+#pageActionSeparator,
+#personal-bookmarks .bookmark-item .toolbarbutton-icon,
+#pocket-button-box,
+#restore-button,
+#screenshots_mozilla_org-menuitem-_create-screenshot,
+#sidebar-box[sidebarcommand=treestyletab_piro_sakura_ne_jp-sidebar-action] #sidebar-header,
+#sidebar-button,
+#statuspanel,
+#tracking-protection-icon-container,
+#urlbar-go-button,
+#urlbar-zoom-button,
+.appMenu-tp-separator,
+.autocomplete-history-dropmarker,
+.search-go-button,
+.tabs-newtab-button.toolbarbutton-1,
+.urlbar-go-button,
+.urlbar-history-dropmarker.urlbar-icon.chromeclass-toolbar-additional,
+PanelUI-webext-web2pdfextension_17_acrobat_adobe_com-browser-action-view,
+ar-button,
+toolbarseparator {
+    display: none !important
+}
+
+#searchbar,
+#urlbar-input-container,
+chromemargin="-1,-1,-1,-1" {
+    padding-bottom: 0 !important
+}
+
+.toolbar,
+.toolbarbutton-1 {
+    margin-bottom: 10px !important;
+    margin-right: 2px !important;
+    margin-left: 2px !important;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    opacity: .6;
+    background-color: transparent !important;
+    text-shadow: 0 1px #fff
+}
+
+.toolbarbutton-1:hover {
+    opacity: 1
+}
+
+#urlbar-input,
+#urlbar-input-container,
+#urlbar.megabar,
+#urlbar.megabar[focused=true] {
+    border: none !important
+}
+
+#urlbar-input-container,
+#urlbar[breakout][breakout-extend]>#urlbar-input-container {
+    height: var(--urlbar-height) !important;
+    padding-block: 0 !important;
+    padding-inline: 0 !important;
+    background-color: var(--lwt-toolbar-field-background-color, rgba(255, 255, 255, .8));
+    transition: none !important;
+    border: none !important;
+    top: 0 !important
+}
+
+#urlbar[breakout][breakout-extend] {
+    top: 0 !important
+}
+
+#urlbar-background,
+#urlbar-container,
+.urlbar-input-box {
+    background-color: var(--color-bg);
+    background-image: none !important;
+    color: var(--urlbar-text-color);
+    font-family: var(--urlbar-text-font)
+}
+
+#urlbar,
+.searchbar-textbox,
+html,
+html|input,
+input {
+    border: transparent !important;
+    box-shadow: none !important;
+    font-family: var(--urlbar-text-font);
+    font-weight: 400 !important;
+    font-size: var(--urlbar-text-size) !important
+}
+
+input#urlbar-input {
+    caret-color: transparent !important;
+    font-family: var(--urlbar-text-font);
+    font-size: var(--urlbar-text-size);
+    font-weight: var(--urlbar-text-weight);
+    text-align: center !important;
+    width: 99999px !important
+}
+
+.ac-url,
+.search-panel-input-value {
+    color: var(--in-content-link-color)
+}
+
+.search-one-offs {
+    background: var(--in-content-box-background)
+}
+
+.search-panel-header,
+.search-panel-one-offs {
+    background: var(--in-content-category-header-background);
+    border-top: none !important
+}
+
+#navigator-toolbox::after {
+    border-bottom: none !important
+}
+
+#browser vbox#appcontent tabbrowser,
+#content,
+#tabbrowser-tabpanels,
+browser[type=content-primary],
+browser[type=content]>html {
+    background: var(--in-content-page-background)
+}
+
+.appMenu-zoomReset-button,
+.subviewbutton.panel-subview-footer,
+menuitem:hover,
+menupopup menu:hover {
+    background-color: var(--color-bg)
+}
+
+menuitem,
+menuitem:hover,
+menupopup menu,
+menupopup menu:hover {
+    -moz-appearance: none !important;
+    color: var(--color-bg)
+}
+
+#PanelUI-button,
+#browser,
+#customization-panel-container,
+#customization-panelWrapper .panel-arrow {
+    -moz-box-ordinal-group: 0 !important
+}
+
+#TabsToolbar {
+    visibility: collapse
+}
+
+#nav-bar {
+    margin-bottom: -1px !important
+}
+
+#nav-bar-customization-target.customization-target,
+#urlbar,
+#urlbar-container,
+#urlbar[focused=true] {
+    border: none !important;
+    min-width: 100% !important;
+    height: 100% !important;
+    font-family: var(--urlbar-text-font);
+    font-size: var(--urlbar-text-size)
+}
+
+.tab-background,
+.tab-content,
+.tabbrowser-tab {
+    mask-image: unset !important
+}
+
+#main-window[sizemode=normal]>#titlebar {
+    -moz-appearance: initial !important
+}
+
+#navigator-toolbox>toolbar {
+    -moz-box-ordinal-group: 2;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    height: var(--urlbar-height)
+}
+
+:root[uidensity=compact] #searchbar,
+:root[uidensity=compact] #urlbar {
+    min-height: var(--urlbar-height)
+}
+
+#searchbar,
+#urlbar-background,
+#urlbar-input,
+#urlbar[breakout] {
+    background-color: var(--color-bg);
+    background-clip: padding-box;
+    border: none !important;
+    border-radius: none !important;
+    font-family: var(--urlbar-text-font);
+    font-size: var(--urlbar-text-size);
+    box-shadow: 0 !important
+}
+
+#searchbar:not(:focus-within):hover,
+#urlbar:not([focused=true]):hover>#urlbar-background {
+    background-color: var(--color-bg);
+    box-shadow: none !important;
+    min-height: var(--urlbar-height) :
+}
+
+.panel-arrow {
+    fill: var(--color-bg)
+}
+
+.appMenu-zoomReset-button,
+.subviewbutton-nav::after {
+    fill: var(--lwt-toolbar-field-focus-color)
+}
+
+.panel-subview-body {
+    color: var(--lwt-toolbar-field-color);
+    background: var(--color-bg);
+    border-color: var(--lwt-toolbar-field-color)
+}
+
+#appMenu-zoomReduce-button,
+#appMenu-zoomReset-button,
+#appMenu-zoomReset-button label,
+.appMenu-zoomReset-button,
+.subviewbutton[shortcut]::after {
+    color: var(--lwt-toolbar-field-focus-color)
+}
+
+.appMenu-zoomReset-button {
+    border-color: var(--lwt-toolbar-field-focus-color)
+}
+
+.panel-subview-footer,
+[class^=PanelUI-] {
+    color: var(--lwt-toolbar-field-color);
+    background: var(--color-bg)
+}
+
+.subviewbutton.panel-subview-footer {
+    border-top: 0 !important
+}
+
+.subviewbutton[shortcut]::after {
+    font-family: var(--urlbar-text-font)
+}
+
+#appMenu-popup .panel-arrowcontent,
+#appMenu-popup .subviewbutton .toolbarbutton-text,
+panelmultiview .toolbaritem-combined-buttons>label {
+    font-family: var(--menu-text-font);
+    font-size: var(--menu-text-size);
+    border: none !important;
+    border-radius: var(--radius)
+}
+
+#appMenu-zoomReduce-button,
+#appMenu-zoomReset-button,
+#appMenu-zoomReset-button label {
+    background: var(--color-bg);
+    border: none !important
+}
+
+#appMenu-fullscreen-button,
+#appMenu-zoomEnlarge-button {
+    background: var(--color-bg);
+    color: var(--lwt-toolbar-field-focus-color);
+    border: none !important;
+    border-radius: var(--radius)
+}
+
+menupopup,
+menupopup>menu>menupopup,
+popup,
+popup>menu>menupopup {
+    -moz-appearance: none !important;
+    background: var(--color-bg);
+    border: none !important;
+    padding: 2px 0 !important;
+    border-radius: var(--radius)
+}
+
+menupopup menuseparator {
+    -moz-appearance: none !important;
+    background: var(--color-bg);
+    margin: 2px 0 !important;
+    padding: 0 !important;
+    border-top: none !important;
+    border-color: transparent !important
+}
+
+.menu-right {
+    filter: invert(95%) !important
+}
+
+#browser {
+    padding-top: 0;
+    margin-top: 0
+}
+
+#TabsToolbar[inFullscreen],
+#nav-bar[inFullscreen],
+#sidebar-header {
+    display: none
+}
+
+#main-window[titlepreface^="[1] "] #sidebar-box[sidebarcommand=treestyletab_piro_sakura_ne_jp-sidebar-action] {
+    visibility: collapse !important
+}
