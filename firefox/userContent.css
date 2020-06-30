@@ -1,0 +1,14 @@
+@-moz-document url(about:blank),
+url(about:newtab),
+url(about:home) {
+
+    #newtab-customize-overlay,
+    html:not(#ublock0-epicker),
+    html:not(#ublock0-epicker) body {
+        background: #111 !important
+    }
+}
+
+:root {
+    scrollbar-width: none !important
+}
