@@ -429,13 +429,13 @@ menupopup menuseparator {
 
 #navigator-toolbox{
        -moz-transform: translate(0, 32px)!important;
-       -moz-transition: all .25s ease!important;
+       -moz-transition: all .2s ease !important;
        margin-bottom: -32px;
        opacity: 0;
 }
 #navigator-toolbox:hover,
 #navigator-toolbox:focus-within{
-    -moz-transform: translate(0, 0)!important;
+    -moz-transform: translate(0, 0) !important;
     margin-bottom: 0px;
     opacity: 1;
 }
