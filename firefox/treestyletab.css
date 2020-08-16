@@ -1,0 +1,170 @@
+:root {
+    --theme-colors-frame: hsl(240, 5%, 5%)​;
+    --theme-colors-icons: rgb(249, 249, 250, 0.7)​;
+    --theme-colors-ntp_background: #2A2A2E​;
+    --theme-colors-ntp_text: rgb(249, 249, 250)​;
+    --theme-colors-popup: #4a4a4f​;
+    --theme-colors-popup_border: #27272b​;
+    --theme-colors-popup_text: rgb(249, 249, 250)​;
+    --theme-colors-sidebar: #38383D​;
+    --theme-colors-sidebar_border: rgba(255, 255, 255, 0.1)​;
+    --theme-colors-sidebar_text: rgb(249, 249, 250)​;
+    --theme-colors-tab_background_text: rgb(249, 249, 250)​;
+    --theme-colors-tab_line: #0a84ff​;
+    --theme-colors-toolbar: hsl(240, 1%, 20%)​;
+    --theme-colors-toolbar_bottom_separator: hsl(240, 5%, 5%)​;
+    --theme-colors-toolbar_field: rgb(71, 71, 73)​;
+    --theme-colors-toolbar_field_border: rgba(249, 249, 250, 0.2)​;
+    --theme-colors-toolbar_field_separator: #5F6670​;
+    --theme-colors-toolbar_field_text: rgb(249, 249, 250)​;
+}
+
+
+tab-item.unread .label-content {
+    font-style: italic;
+}
+
+/* Background colour for the tree sidebar (light blue when window is
+   active, grey otherwise) */
+:root,
+#background {
+    background: #111;
+    text-transform: capitalize;
+}
+
+/* change tab height */
+:root {
+    --tab-height: 32px !important;
+}
+
+.tab {
+    height: var(--tab-height) !important;
+}
+
+/* hide close button */
+.tab .closebox {
+    display: none;
+}
+
+/* hide scrollbar */
+#tabbar {
+    overflow-y: scroll;
+}
+
+:root.left #tabbar,
+#tabContextMenu,
+#tabContextMenu ul {
+    margin-left: -15px;
+}
+
+:root.right #tabbar {
+    margin-right: -15px;
+}
+
+/* Hide border on tab bar, force its state to 'scroll', adjust margin-left for width of scrollbar. */
+#tabbar {
+    border: 0;
+    overflow-y: scroll !important;
+    margin-left: -12px !important;
+}
+
+/* Hide .twisty and adjust margins so favicons have 7px on left. */
+.tab .twisty {
+    visibility: hidden;
+    margin-left: -4px;
+}
+
+/* Push tab labels to the right so they're hidden while collapsed, but still look fine expanded. */
+.tab .label {
+    margin-left: 15px;
+}
+
+/* Hide close buttons on tabs. */
+.tab .closebox {
+    visibility: collapse;
+}
+
+/* Hide sound playing/muted button. */
+.sound-button::before {
+    display: none !important;
+}
+
+/* Hide 'new tab' button. */
+.newtab-button {
+    display: none;
+}
+
+/* ################################################ */
+/* ##### COLOR THEME ############################## */
+/* ################################################ */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#tabbar {
+    border-right: 1px solid #030303;
+    box-shadow: none !important;
+}
+
+.tab {
+    background-color: transparent;
+    border-color: #111;
+    color: #666;
+    box-shadow: none !important;
+    padding: 3px;
+    font-size: 13px;
+    font-family: PragmataPro;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    cursor: pointer
+}
+
+.tab.active:hover,
+.tab.discarded:hover,
+.tab:hover {
+    background-color: #222 !important;
+    color: #999 !important;
+    opacity: 1;
+}
+
+.tab.discarded {
+    background-color: #111;
+    color: #666 !important;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    cursor: pointer
+}
+
+
+.tab.active {
+    background-color: #222;
+    font-weight: 500;
+    color: #999 !important;
+}
+
+/* Adjust style for tab that has sound playing. */
+.tab.sound-playing .favicon {
+    animation: spin 3s linear 0s infinite;
+}
+
+/* Adjust style for tab that is muted. */
+.tab.muted {
+    opacity: 0.6;
+}
+
+.twisty {
+    visibility: hidden;
+    margin: -2px;
+}
+
+.favicon {
+    visibility: hidden;
+    margin: -12px;
+}
