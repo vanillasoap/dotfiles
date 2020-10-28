@@ -1,2 +1,2 @@
 ### In Firefox 78+
-Add `ui.prefersReducedMotion` instance in about:config with the numeric value of `1` to prevent stuttering in the animation. 
+Add the numeric value of `1` to the `ui.prefersReducedMotion` instance in about:config to prevent stuttering in the animation. 
